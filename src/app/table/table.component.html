@@ -1,0 +1,32 @@
+<table class="table-hover table-secondary table mt-5">
+  <thead>
+    <tr>
+      <th scope="col">{{"Code" | translate}}</th>
+      <th scope="col">{{"Name" | translate}}</th>
+      <th scope="col">{{"Department" | translate}}</th>
+      <th scope="col">{{"Date" | translate}}</th>
+      <th scope="col">{{"Email" | translate}}</th>
+      <th scope="col">{{"Mobile" | translate}}</th>
+      <th>{{"Update" | translate}}</th>
+      <th>{{"Delete" | translate}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of employee">
+      <td>{{ item.code }}</td>
+      <td>{{ item.name }}</td>
+      <td>{{ item.department }}</td>
+      <td>{{ item.hiringDate }}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.mobile }}</td>
+      <td>
+        <button class="btn update" (click)="updateRecord(item)">{{"Update" | translate}}</button>
+      </td>
+      <td>
+        <button class="btn btn-danger delete" (click)="deleteRecord(item)">
+          {{"Delete" | translate}}
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

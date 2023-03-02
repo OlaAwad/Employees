@@ -1,0 +1,113 @@
+<div *ngIf="employeeObJ | async as employeeObJ" class="container ms-5">
+  <form [formGroup]="empForm" >
+    <div class="form-group row">
+      <label for="employeeCode" class="col-3">{{"Code" | translate}}:</label>
+      <input
+        id="employeeCode"
+        type="text"
+        formControlName="employeeCode"
+        class="col-6"
+        [(ngModel)]="employeeObJ.code"
+        
+      />
+    </div>
+
+    <div class="form-group row">
+      <label for="employeeName" class="col-3">{{"Name" | translate}}:</label>
+      <input
+        id="employeeName"
+        type="text"
+        formControlName="employeeName"
+        class="col-6"
+        [(ngModel)]="employeeObJ.name"
+        
+      />
+    </div>
+
+    <div class="form-group row">
+      <label for="employeeHiringDate" class="col-3">{{"Date" | translate}}:</label>
+      <input
+        id="employeeHiringDate"
+        type="date"
+        formControlName="employeeHiringDate"
+        class="col-6"
+        [(ngModel)]="employeeObJ.hiringDate"
+        
+      />
+    </div>
+
+    <div class="form-group row">
+      <label for="employeeNationalID" class="col-3">{{"ID" | translate}}:</label>
+      <input
+        id="employeeNationalID"
+        type="number"
+        formControlName="employeeNationalID"
+        class="col-6"
+        [(ngModel)]="employeeObJ.nationalID"
+        
+      />
+    </div>
+
+    <div class="form-group row">
+      <label for="employeeEmail" class="col-3">{{"Email" | translate}}:</label>
+      <input
+        id="employeeEmail"
+        type="email"
+        formControlName="employeeEmail"
+        class="col-6"
+        [(ngModel)]="employeeObJ.email"
+        
+      />
+    </div>
+
+    <div class="form-group row">
+      <label for="employeeDepartment" class="col-3">{{"Department" | translate}}:</label>
+      <select
+        formControlName="employeeDepartment"
+        id="employeeDepartment"
+        class="col-6"
+        name="employeeDepartment"
+        >
+        
+        <option *ngFor="let item of employeeDepartment" [value]="item.department" >
+          {{ item.department }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group row">
+      <label for="employeeManager" class="col-3">{{"Manager" | translate}}:</label>
+      <select
+        formControlName="employeeManager"
+        id="employeeManager"
+        class="col-6"
+      >
+        <option
+          value="{{ item.employeeName }}"
+          *ngFor="let item of employeeName"
+        >
+          {{ item.employeeName }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group row">
+      <label for="employeeMobile" class="col-3">{{"Mobile" | translate}}:</label>
+      <input
+        id="employeeMobile"
+        type="number"
+        formControlName="employeeMobile"
+        class="col-6"
+        [(ngModel)]="employeeObJ.mobile"
+        
+      />
+    </div>
+
+    <button type="submit" class="mt-4" (click)="createRecord()">
+      {{"Submit" | translate}}
+    </button>
+    <!-- <button *ngIf="employeeObJ.isEditable" type="submit" class="mt-4 ms-5" (click)="updateRecord(employeeObJ)">
+      {{"Update" | translate}}
+    </button> -->
+  </form>
+</div>

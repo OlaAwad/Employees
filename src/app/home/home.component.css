@@ -1,0 +1,21 @@
+p{
+    width: 30%;
+    margin: auto;
+    color: rgb(24, 27, 127);
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+/* .cards{
+    text-align: center;
+} */
+.card{
+    background-image: linear-gradient(to bottom, rgb(219, 222, 224), #3E5151);
+    border: none;
+}
+.card-title{
+    color: rgb(61, 62, 63);
+}
+.count{
+    padding: 1em;
+}

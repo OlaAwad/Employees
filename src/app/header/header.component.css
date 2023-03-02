@@ -1,0 +1,11 @@
+.arabLang{
+    margin:  0 1em;
+}
+.logo{
+    width: 50%;
+}
+.lang{
+    color: rgb(24, 27, 127);
+    font-weight: 600;
+    cursor: pointer;
+}

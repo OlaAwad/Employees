@@ -1,0 +1,11 @@
+button{
+    background-color: rgb(24, 27, 127) !important;
+    margin-bottom: 2em;
+    color: gray !important;
+}
+.active{
+    color: white !important; 
+}
+.homeBtn{
+    font-size: 0.9em !important;
+}

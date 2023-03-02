@@ -1,0 +1,20 @@
+{
+    "Home" :"Home Page",
+    "Employees" :"Employees",
+    "Code" : "Employee Code",
+    "Name" : "Name",
+    "Date" : "Hiring Date",
+    "ID" : "National ID",
+    "Email" : "Email",
+    "Department" : "Department",
+    "Manager" : "Manager",
+    "Mobile" : "Mobile Number",
+    "Submit" : "Submit",
+    "Update" : "Update",
+    "Delete" : "Delete",
+    "Employee Counts" : "Employee Counts",
+    "New Hiring" : "New Hiring (By Current Year)",
+    "Sales" : "Sales Department Count",
+    "English" : "English",
+    "Arabic" : "Arabic"
+}
